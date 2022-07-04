@@ -1,0 +1,445 @@
+if Glucose < 128
+	then if BMI < 26.5
+		then if Glucose < 107
+			then if Pregnancies < 1
+				then if Glucose < 73
+					then Outcome = 0.0
+					else if Glucose < 94
+						then Outcome = 0.0
+						else if Glucose < 98
+							then Outcome = 0.0
+							else if Glucose < 99
+								then Outcome = 0.0
+								else if Glucose < 101
+									then Outcome = 0.0
+									else if BloodPressure < 64
+										then Outcome = 0.0
+										else Outcome = 0.0
+				else if Pregnancies < 2
+					then if Glucose < 71
+						then Outcome = 0.0
+						else if Glucose < 79
+							then Outcome = 0.0
+							else if Glucose < 80
+								then Outcome = 0.0
+								else if Glucose < 90
+									then Outcome = 0.0
+									else if Glucose < 91
+										then Outcome = 0.0
+										else Outcome = 0.0
+					else if Pregnancies < 3
+						then if Glucose < 68
+							then Outcome = 0.0
+							else if Glucose < 90
+								then if BloodPressure < 70
+									then Outcome = 0.0
+									else Outcome = 0.0
+								else if Glucose < 96
+									then Outcome = 0.0
+									else if Glucose < 99
+										then Outcome = 0.0
+										else Outcome = 0.0
+						else if Pregnancies < 4
+							then if Glucose < 87
+								then Outcome = 0.0
+								else if Glucose < 99
+									then Outcome = 0.0
+									else if Glucose < 106
+										then Outcome = 0.0
+										else Outcome = 0.0
+							else if Pregnancies < 5
+								then if Glucose < 96
+									then Outcome = 0.0
+									else if Glucose < 103
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else if Pregnancies < 6
+									then Outcome = 0.0
+									else if Pregnancies < 7
+										then Outcome = 0.0
+										else Outcome = 0.0
+			else if Pregnancies < 10
+				then if Glucose < 108
+					then if Insulin < 48
+						then if Pregnancies < 8
+							then Outcome = 0.0
+							else Outcome = 0.0
+						else Outcome = 1.0
+					else if Pregnancies < 1
+						then if Glucose < 125
+							then Outcome = 0.0
+							else Outcome = 0.0
+						else if Pregnancies < 2
+							then if Glucose < 119
+								then if BloodPressure < 56
+									then Outcome = 0.0
+									else Outcome = 0.0
+								else Outcome = 0.0
+							else if Pregnancies < 3
+								then if Glucose < 111
+									then if SkinThickness < 32
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Glucose < 112
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else if Pregnancies < 5
+									then if Glucose < 116
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Pregnancies < 6
+										then Outcome = 0.0
+										else Outcome = 0.0
+				else Outcome = 1.0
+		else if Age < 31
+			then if Pregnancies < 7
+				then if BMI < 29.7
+					then if Pregnancies < 1
+						then if Glucose < 102
+							then Outcome = 0.0
+							else if Glucose < 104
+								then Outcome = 0.0
+								else Outcome = 0.0
+						else if Pregnancies < 2
+							then if Glucose < 90
+								then Outcome = 0.0
+								else if Glucose < 91
+									then Outcome = 0.0
+									else if Glucose < 97
+										then Outcome = 0.0
+										else Outcome = 0.0
+							else if Pregnancies < 3
+								then if Glucose < 81
+									then Outcome = 0.0
+									else if Glucose < 82
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else if Pregnancies < 4
+									then if Glucose < 113
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Pregnancies < 5
+										then Outcome = 0.0
+										else Outcome = 0.0
+					else if DiabetesPedigreeFunction < 0.13
+						then if Pregnancies < 3
+							then Outcome = 1.0
+							else Outcome = 1.0
+						else if DiabetesPedigreeFunction < 0.496
+							then if BMI < 31.9
+								then if Age < 25
+									then if Pregnancies < 1
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if BloodPressure < 50
+										then Outcome = 0.0
+										else Outcome = 1.0
+								else if BloodPressure < 85
+									then if Pregnancies < 1
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if BloodPressure < 86
+										then Outcome = 1.0
+										else Outcome = 0.0
+							else if BMI < 32.3
+								then if Pregnancies < 1
+									then if Glucose < 113
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Pregnancies < 2
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else if BloodPressure < 88
+									then if Glucose < 88
+										then Outcome = 0.0
+										else Outcome = 0.5
+									else if Pregnancies < 3
+										then Outcome = 0.0
+										else Outcome = 0.0
+				else if Pregnancies < 8
+					then Outcome = 1.0
+					else Outcome = 1.0
+			else if Age < 54
+				then if Glucose < 100
+					then if Age < 44
+						then if Glucose < 62
+							then Outcome = 1.0
+							else if DiabetesPedigreeFunction < 1.224
+								then if Pregnancies < 1
+									then Outcome = 0.0
+									else if Pregnancies < 3
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else Outcome = 1.0
+						else if BloodPressure < 82
+							then if Pregnancies < 12
+								then Outcome = 1.0
+								else if Glucose < 92
+									then Outcome = 1.0
+									else Outcome = 1.0
+							else if Pregnancies < 8
+								then Outcome = 0.0
+								else Outcome = 0.0
+					else if BloodPressure < 56
+						then if Pregnancies < 1
+							then Outcome = 0.0
+							else if Pregnancies < 9
+								then Outcome = 0.0
+								else Outcome = 0.0
+						else if DiabetesPedigreeFunction < 0.141
+							then if Pregnancies < 6
+								then Outcome = 0.0
+								else if Pregnancies < 11
+									then Outcome = 0.0
+									else Outcome = 0.0
+							else if BMI < 39.5
+								then if BloodPressure < 84
+									then if SkinThickness < 40
+										then Outcome = 0.7272727272727273
+										else Outcome = 0.16666666666666666
+									else if DiabetesPedigreeFunction < 0.855
+										then Outcome = 0.0
+										else Outcome = 1.0
+								else if Pregnancies < 8
+									then if Glucose < 122
+										then Outcome = 1.0
+										else Outcome = 1.0
+									else if Pregnancies < 10
+										then Outcome = 1.0
+										else Outcome = 1.0
+				else if Pregnancies < 5
+					then Outcome = 0.0
+					else if Pregnancies < 6
+						then if Glucose < 109
+							then Outcome = 0.0
+							else Outcome = 0.0
+						else if Pregnancies < 8
+							then if Glucose < 114
+								then Outcome = 0.0
+								else Outcome = 0.0
+							else if Pregnancies < 12
+								then if Glucose < 95
+									then Outcome = 0.0
+									else if Glucose < 110
+										then Outcome = 0.0
+										else Outcome = 0.0
+								else Outcome = 0.0
+	else if Glucose < 158
+		then if BloodPressure < 92
+			then if DiabetesPedigreeFunction < 0.286
+				then if DiabetesPedigreeFunction < 0.244
+					then if DiabetesPedigreeFunction < 0.196
+						then if Pregnancies < 6
+							then if Pregnancies < 1
+								then Outcome = 0.0
+								else if Pregnancies < 2
+									then if Glucose < 157
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Pregnancies < 4
+										then Outcome = 0.0
+										else Outcome = 0.0
+							else if Age < 45
+								then if Pregnancies < 8
+									then Outcome = 1.0
+									else if Pregnancies < 15
+										then Outcome = 1.0
+										else Outcome = 1.0
+								else if BloodPressure < 80
+									then if Pregnancies < 9
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else Outcome = 1.0
+						else if BloodPressure < 84
+							then if Pregnancies < 2
+								then if Glucose < 141
+									then Outcome = 1.0
+									else Outcome = 1.0
+								else if Pregnancies < 3
+									then Outcome = 1.0
+									else if Pregnancies < 4
+										then Outcome = 1.0
+										else Outcome = 1.0
+							else if Pregnancies < 9
+								then if Pregnancies < 7
+									then Outcome = 0.0
+									else Outcome = 0.0
+								else Outcome = 1.0
+					else if Pregnancies < 1
+						then Outcome = 0.0
+						else if Pregnancies < 3
+							then Outcome = 0.0
+							else if Pregnancies < 4
+								then Outcome = 0.0
+								else if Pregnancies < 7
+									then if Glucose < 141
+										then Outcome = 0.0
+										else Outcome = 0.0
+									else if Pregnancies < 10
+										then Outcome = 0.0
+										else Outcome = 0.0
+				else if Pregnancies < 8
+					then if Insulin < 193
+						then if BMI < 43.3
+							then if BMI < 40.2
+								then if BloodPressure < 68
+									then if Age < 28
+										then Outcome = 0.7142857142857143
+										else Outcome = 0.0
+									else if BloodPressure < 90
+										then Outcome = 0.9166666666666666
+										else Outcome = 0.0
+								else if Pregnancies < 1
+									then Outcome = 0.0
+									else if Pregnancies < 7
+										then Outcome = 0.0
+										else Outcome = 0.0
+							else if Pregnancies < 2
+								then Outcome = 1.0
+								else if Pregnancies < 4
+									then Outcome = 1.0
+									else if Pregnancies < 7
+										then Outcome = 1.0
+										else Outcome = 1.0
+						else if BloodPressure < 74
+							then if Age < 24
+								then if Pregnancies < 1
+									then Outcome = 0.0
+									else Outcome = 0.0
+								else if Pregnancies < 2
+									then Outcome = 1.0
+									else Outcome = 1.0
+							else if Pregnancies < 2
+								then Outcome = 0.0
+								else if Pregnancies < 5
+									then Outcome = 0.0
+									else if Pregnancies < 6
+										then Outcome = 0.0
+										else Outcome = 0.0
+					else if DiabetesPedigreeFunction < 0.443
+						then Outcome = 0.0
+						else if Pregnancies < 9
+							then if Glucose < 154
+								then Outcome = 1.0
+								else if Glucose < 155
+									then Outcome = 1.0
+									else Outcome = 1.0
+							else if Pregnancies < 10
+								then if Glucose < 145
+									then Outcome = 1.0
+									else Outcome = 1.0
+								else if Pregnancies < 11
+									then Outcome = 1.0
+									else if Pregnancies < 12
+										then Outcome = 1.0
+										else Outcome = 1.0
+			else if Pregnancies < 1
+				then Outcome = 1.0
+				else if Pregnancies < 4
+					then if Glucose < 133
+						then Outcome = 1.0
+						else if Glucose < 147
+							then Outcome = 1.0
+							else Outcome = 1.0
+					else if Pregnancies < 5
+						then Outcome = 1.0
+						else if Pregnancies < 11
+							then Outcome = 1.0
+							else Outcome = 1.0
+		else if BloodPressure < 80
+			then if Insulin < 130
+				then if Pregnancies < 1
+					then if Glucose < 180
+						then Outcome = 1.0
+						else if BloodPressure < 78
+							then Outcome = 1.0
+							else Outcome = 1.0
+					else if Pregnancies < 2
+						then if Glucose < 173
+							then Outcome = 1.0
+							else if Glucose < 180
+								then Outcome = 1.0
+								else Outcome = 1.0
+						else if Pregnancies < 3
+							then Outcome = 1.0
+							else if Pregnancies < 4
+								then if Glucose < 169
+									then Outcome = 1.0
+									else if Glucose < 193
+										then Outcome = 1.0
+										else Outcome = 1.0
+								else if Pregnancies < 5
+									then if Glucose < 183
+										then Outcome = 1.0
+										else Outcome = 1.0
+									else if Pregnancies < 6
+										then Outcome = 1.0
+										else Outcome = 1.0
+				else if Insulin < 135
+					then Outcome = 0.0
+					else if SkinThickness < 39
+						then if Pregnancies < 1
+							then if Glucose < 198
+								then Outcome = 1.0
+								else Outcome = 1.0
+							else if Pregnancies < 3
+								then if Glucose < 196
+									then Outcome = 1.0
+									else Outcome = 1.0
+								else if Pregnancies < 4
+									then if Glucose < 170
+										then Outcome = 1.0
+										else Outcome = 1.0
+									else if Pregnancies < 5
+										then Outcome = 1.0
+										else Outcome = 1.0
+						else if BloodPressure < 78
+							then if SkinThickness < 45
+								then if Pregnancies < 4
+									then Outcome = 0.0
+									else Outcome = 0.0
+								else Outcome = 1.0
+							else if Pregnancies < 3
+								then Outcome = 1.0
+								else if Pregnancies < 4
+									then Outcome = 1.0
+									else Outcome = 1.0
+			else if BMI < 30.4
+				then if Pregnancies < 8
+					then Outcome = 0.0
+					else if Pregnancies < 10
+						then Outcome = 0.0
+						else Outcome = 0.0
+				else if BloodPressure < 90
+					then if Pregnancies < 2
+						then if Glucose < 188
+							then Outcome = 1.0
+							else Outcome = 1.0
+						else if Pregnancies < 3
+							then Outcome = 1.0
+							else if Pregnancies < 7
+								then if BloodPressure < 84
+									then Outcome = 1.0
+									else Outcome = 1.0
+								else if Pregnancies < 9
+									then if Glucose < 168
+										then Outcome = 1.0
+										else Outcome = 1.0
+									else if Glucose < 165
+										then Outcome = 1.0
+										else Outcome = 1.0
+					else if Pregnancies < 8
+						then if SkinThickness < 31
+							then if DiabetesPedigreeFunction < 1.461
+								then if Pregnancies < 5
+									then Outcome = 1.0
+									else if Pregnancies < 6
+										then Outcome = 1.0
+										else Outcome = 1.0
+								else Outcome = 0.0
+							else if Pregnancies < 7
+								then Outcome = 0.0
+								else Outcome = 0.0
+						else if Pregnancies < 9
+							then Outcome = 1.0
+							else Outcome = 1.0

@@ -1,0 +1,67 @@
+Solution to Q1 and Q2:
+Using Impurity Measure - Information Gain
+Analyzing passed tree:
+	max_depth = 10	Variation: 0 -> trainError = 0.0165353917244, testError = 0.30592563534
+	Variation: 1 -> trainError = 0.0657672634271, testError = 0.24197581197
+	Variation: 2 -> trainError = 0.0124223602484, testError = 0.238772565303
+	Variation: 3 -> trainError = 0.0375021958718, testError = 0.244288536685
+	Variation: 4 -> trainError = 0.0145833333333, testError = 0.322815205628
+	Variation: 5 -> trainError = 0.0152268021833, testError = 0.297901125317
+	Variation: 6 -> trainError = 0.0246386342817, testError = 0.270329562365
+	Variation: 7 -> trainError = 0.0352696216827, testError = 0.237708012528
+	Variation: 8 -> trainError = 0.0499298737728, testError = 0.261970150254
+	Variation: 9 -> trainError = 0.0369800093951, testError = 0.252613490634
+	meanTrainError = 0.0308855485921, meanTestError = 0.267430009602
+	Therefore, Accuracy = 73.2569990398
+
+Using Impurity Measure - Gini Index
+Analyzing passed tree:
+	max_depth = 10	Variation: 0 -> trainError = 0.0186664784491, testError = 0.235698916252
+	Variation: 1 -> trainError = 0.00144927536232, testError = 0.333333333333
+	Variation: 2 -> trainError = 0.0119912008282, testError = 0.28908843611
+	Variation: 3 -> trainError = 0.0262560386473, testError = 0.263629950297
+	Variation: 4 -> trainError = 0.0302613871636, testError = 0.202596289057
+	Variation: 5 -> trainError = 0.0178260869565, testError = 0.243909732243
+	Variation: 6 -> trainError = 0.00217391304348, testError = 0.293831168831
+	Variation: 7 -> trainError = 0.0165596179183, testError = 0.260423747511
+	Variation: 8 -> trainError = 0.0133945040467, testError = 0.296800316492
+	Variation: 9 -> trainError = 0.00847567287785, testError = 0.354333007554
+	meanTrainError = 0.0147054175293, meanTestError = 0.277364489768
+	Therefore, Accuracy = 72.2635510232
+
+Comparing the Accuracies, We go forward with the Tree obtained from using Information Gain
+Solution to Q3:
+Analyzing the decision tree model:
+	max_depth = 1 -> trainError = 0.182934356042, testError = 0.193848052874
+	max_depth = 2 -> trainError = 0.162164680997, testError = 0.177385619898
+	max_depth = 3 -> trainError = 0.149396696101, testError = 0.186225934734
+	max_depth = 4 -> trainError = 0.125613739631, testError = 0.200072692479
+	max_depth = 5 -> trainError = 0.10680188643, testError = 0.208174609866
+	max_depth = 6 -> trainError = 0.0876959846171, testError = 0.218648584906
+	max_depth = 7 -> trainError = 0.073229220263, testError = 0.223471587256
+	max_depth = 8 -> trainError = 0.0505660543065, testError = 0.251374152526
+	max_depth = 9 -> trainError = 0.0336130138445, testError = 0.276340664058
+	max_depth = 10 -> trainError = 0.0242436377745, testError = 0.285424611894
+	max_depth = 11 -> trainError = 0.013561667767, testError = 0.301027030864
+	max_depth = 12 -> trainError = 0.0161434508994, testError = 0.29605431048
+	max_depth = 13 -> trainError = 0.00240636175419, testError = 0.284434914891
+	max_depth = 14 -> trainError = 0.00441860827959, testError = 0.285808417336
+	max_depth = 15 -> trainError = 0.00231280193237, testError = 0.311160213244
+	max_depth = 16 -> trainError = 0.00302614655876, testError = 0.300725873791
+	max_depth = 17 -> trainError = 0.00274388292867, testError = 0.297107057978
+	max_depth = 18 -> trainError = 0.000260869565217, testError = 0.311688311688
+	max_depth = 19 -> trainError = 0.0, testError = 0.293506493506
+	max_depth = 20 -> trainError = 0.0, testError = 0.301298701299
+	Therefore, bestDepth = 2
+
+Solution to Q4:
+	Before pruning:
+		trainError = 0.0352696216827, valError = 0.315222783328, testError = 0.237708012528
+
+	Refer to prunedTree.txt file
+
+	After pruning:
+		trainError = 0.141343169848, valError = 0.185705961628, testError = 0.168253023062
+
+Solution to Q4:
+	Refer to tree.txt file

@@ -1,0 +1,21 @@
+if Glucose < 128
+	then if BMI < 26.5
+		then if Glucose < 107
+			then Outcome = 0.0
+			else Outcome = 0.07692307692307693
+		else if Age < 31
+			then Outcome = 0.1640625
+			else Outcome = 0.391304347826087
+	else if Glucose < 158
+		then if BloodPressure < 92
+			then if DiabetesPedigreeFunction < 0.286
+				then Outcome = 0.34375
+				else if Pregnancies < 8
+					then if Insulin < 193
+						then if BMI < 43.3
+							then Outcome = 0.6153846153846154
+							else Outcome = 1.0
+						else Outcome = 0.2222222222222222
+					else Outcome = 0.9166666666666666
+			else Outcome = 1.0
+		else Outcome = 0.8732394366197183
